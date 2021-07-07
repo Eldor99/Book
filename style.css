@@ -1,0 +1,67 @@
+h1{
+    margin: 1em auto  !important;
+    text-align: center;
+}
+
+.card{
+    padding: 1em 2em;
+    background-color: antiquewhite;
+    border: 1px black solid;
+
+    flex: 1 0 21%; /* explanation below */
+    margin: 1   5px;
+    height: 200px;
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap
+}
+
+button{
+    display: flex;
+    justify-content: center;
+    background-color: cadetblue;
+    margin: auto  !important;
+    margin-bottom: 2em !important;
+    position: relative;
+    bottom: 20px;
+}
+
+.form{
+    display: flex;
+}
+
+.btn{
+    display: flex;
+    justify-content: flex-start;
+    margin: 0 10em;
+}
+
+.success, .error {
+    color: white;
+    padding: 5px;
+    margin: 5px 0 15px 0;
+}
+
+.success {
+    background-color: green;
+}
+
+.error{
+    background-color: red;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+      /* background-color: lightblue; */
+    }
+    .cards{
+        display: inline;
+    }
+
+    .form{
+        display: flex;
+        flex-direction: column;
+    }
+  }

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="skeleton.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="center">Book-List</h1>
+        </header>
+        <form class="form">
+            <!-- <label for="name">name</label> -->
+            <input class="title" type="text" placeholder='title of your books'>
+            <input class="madeby" type="text" placeholder='who made your book?'>
+            <input type="number" name="year" class="year" placeholder='year of your book'>
+            <input class="btn" type="submit">
+        </form>
+
+        <hr>
+        <table class="u-full-width">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Year</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="book-list">
+
+            </tbody>
+    </table>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
